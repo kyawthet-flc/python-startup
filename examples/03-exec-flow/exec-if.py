@@ -1,9 +1,11 @@
 #!/usr/bin/python
 
 AGE_LIMIT = 70
-age = 23
+age = 74
 is_a_boy = True
-is_young = (age > AGE_LIMIT)
+is_young = (age <= AGE_LIMIT)
 
 if is_a_boy and not is_young:
-    print 'Your are an "old" man... (above %d years old)' % AGE_LIMIT
+    print 'Your are an "old" man... (%d which above the %d limit)' % (age, AGE_LIMIT)
+else:
+    print 'You are not an old man' 
