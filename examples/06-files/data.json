@@ -1,20 +1,26 @@
 {
-	"company": {
-		"name": "HowAreYou",
-		"url": "http://www.howareyou.com"
-	},
-	"employees": [
-		"Manu": {
-			"age": "22",
-			"position": "sysadmin",
-			"email": "manu@howareyou.com" },
-		"Cedric": {
-			"age": "22",
-			"position": "sysadmin",
-			"email": "manu@howareyou.com" },
-		"Diego": {
-			"age": "22",
-			"position": "sysadmin",
-			"email": "manu@howareyou.com" },
-	]
+    "company": {
+        "name": "HowAreYou",
+        "url": "http://www.howareyou.com"
+    },
+    "employees": [
+        	{
+        	    "name": "Manu",
+                "age": "22",
+                "position": "sysadmin",
+                "email": "manu@howareyou.com"
+            },
+            {
+                "name": "Cedric",
+                "age": "25",
+                "position": "developer",
+                "email": "cedric@howareyou.com"
+             },
+             {
+                "name": "Diego",
+                "age": "42",
+                "position": "developer",
+                "email": "diego@howareyou.com"
+            }
+    ]
 }
