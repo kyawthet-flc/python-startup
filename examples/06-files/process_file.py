@@ -14,6 +14,7 @@ import logging
         4- add logger as a -d option
 """
 
+
 def process_file_1(filename):
 
     with open(filename) as json_file:
@@ -27,6 +28,7 @@ def process_file_2(filename):
         json_data = json.load(json_file)
         pprint.pprint(json_data)
 
+
 def process_file_3(filename):
 
     parser = OptionParser("usage: %prog [options] filename")
@@ -34,16 +36,17 @@ def process_file_3(filename):
 
     if len(args) < 1:
         print('Error: you must pass a filename')
-        sys.exit(-1);
+        sys.exit(-1)
 
-    filename = args[0];
+    filename = args[0]
     if not os.path.isfile(filename):
         print('Error: %s does not seem to be a file name' % filename)
-        sys.exit(-2);
+        sys.exit(-2)
 
     process_file_2(filename)
 
 LOG_FORMAT = '%(asctime)s:%(name)s:%(levelname)s: %(message)s'
+
 
 def process_file_4(filename):
 
@@ -54,12 +57,12 @@ def process_file_4(filename):
 
     if len(args) < 1:
         print('Error: you must pass a filename')
-        sys.exit(-1);
+        sys.exit(-1)
 
-    filename = args[0];
+    filename = args[0]
     if not os.path.isfile(filename):
         print('Error: %s does not seem to be a file name' % filename)
-        sys.exit(-2);
+        sys.exit(-2)
 
     if options.debug_level is not None:
         level = int(options.debug_level)
