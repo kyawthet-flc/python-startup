@@ -9,22 +9,24 @@ def my_funny_routine(name, greet='Hello'):
 
 def main():
 
-	# traditional (C-like)
-	my_funny_routine('Cedric', 'Hello')
+    # traditional (C-like)
+    my_funny_routine('Cedric', 'Hello')
 
-	# named args
-	my_funny_routine(greet='Hi', name='Cedric')
+    # named args
+    my_funny_routine(greet='Hi', name='Cedric')
 
-	# ... identical to:
-	my_funny_routine(name='Cedric', greet='Hi')
+    # ... identical to:
+    my_funny_routine(name='Cedric', greet='Hi')
 
-	# default value !
-	my_funny_routine(name='Cedric')
+    # default value !
+    my_funny_routine(name='Cedric')
 
-	# Exercise:
-	# change this routine to add an optional msg
-	# 
-	# calling my_funny_routine('Cedric') should now display: Hello Cedric, welcome to you!
+    # Exercise:
+    # change this routine to add an optional msg.
+    # Hint: use the none value ;)
+    #
+    # calling my_funny_routine('Cedric') should now display: Hello Cedric, welcome to you!
+
 
 
 if __name__ == '__main__':
