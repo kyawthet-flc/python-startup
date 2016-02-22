@@ -58,7 +58,7 @@ def process_file(filename):
     for employee in json_data['employees']:
         logger.debug('printing employee: %s', )
         pprint.pprint(employee)
-        send_mail(to=employee['email'], content="Hi %s! \nYour remaining days: %s" % (employee['name'], employee['holidays']['remaining']))
+        send_mail(to=employee['contact']['email'], content="Hi %s! \nYour remaining days: %s" % (employee['name'], employee['holidays']['remaining']))
 
 
 if __name__ == '__main__':
