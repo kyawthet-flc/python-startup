@@ -7,8 +7,12 @@ class JSONFileDecoder(BaseFileDecoder):
         super(JSONFileDecoder, self).__init__(filename, logger)
 
     def get_employees(self):
-        with open(self.filename) as json_file:
-            self.logger.info('reading JSON data from %s', self.filename)
-            json_data = json.load(json_file)
-            self.logger.info('reading JSON data: done')
-        return json_data['employees']
+        try:
+            with open(self.filename) as json_file:
+                self.logger.info('reading JSON data from %s', self.filename)
+                json_data = json.load(json_file)
+                self.logger.info('reading JSON data: done')
+            return json_data['employees']
+        except Exception as error:
+            self.logger.critical('Error when reading JSON file: %s' % error)
+            raise error

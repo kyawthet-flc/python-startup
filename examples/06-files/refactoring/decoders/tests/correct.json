@@ -1,0 +1,44 @@
+{
+    "company": {
+        "name": "HowAreYou",
+        "url": "http://www.python-startup.com"
+    },
+    "employees": [
+            {
+                "name": "Manu",
+                "age": "22",
+                "position": "sysadmin",
+                "contact": {
+                    "email": "pierreroth64@gmail.com",
+                    "phone": "+33-608855234"
+                },
+                "holidays": {
+                    "remaining": "3"
+                }
+            },
+            {
+                "name": "Cedric",
+                "age": "25",
+                "position": "developer",
+                "contact": {
+                    "email": "pierreroth64@gmail.com",
+                    "phone": "+33-603532522"
+                },
+                "holidays": {
+                    "remaining": "2"
+                }
+             },
+             {
+                "name": "Diego",
+                "age": "42",
+                "position": "developer",
+                "contact": {
+                    "email": "pierreroth64@gmail.com",
+                    "phone": "+33-6969696969"
+                },
+                "holidays": {
+                    "remaining": "15"
+                }
+            }
+    ]
+}

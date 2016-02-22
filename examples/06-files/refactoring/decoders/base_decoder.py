@@ -1,4 +1,4 @@
-
+import logging
 import os.path
 
 class BaseFileDecoder(object):
