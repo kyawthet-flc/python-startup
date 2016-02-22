@@ -6,13 +6,17 @@ import os.path
 from optparse import OptionParser
 import logging
 from decoders.json_decoder import JSONFileDecoder
+from decoders.xml_decoder import XMLFileDecoder
 from notifiers.gmail_notifier import GmailNotifier
+from notifiers.sms_notifier import SMSNotifier
 
 LOG_FORMAT = '%(asctime)s:%(name)s:%(levelname)s: %(message)s'
 
 SUPPORTED_FILE_DECODERS = {  # extension: decoder
-                            ".json": JSONFileDecoder
-                        }
+    ".json": JSONFileDecoder,
+    ".xml": XMLFileDecoder
+}
+
 
 class FileProcessor(object):
     """
@@ -45,8 +49,10 @@ class FileProcessor(object):
         for employee in employees:
             print('processing employee: %s...' % employee['name'])
             for notifier in self.notifiers:
-                notifier.notify(contact=employee['contact'], content=self._build_notif_msg(employee))
+                notifier.notify(contact=employee['contact'],
+                                content=self._build_notif_msg(employee))
             print('done.')
+
 
 def process_file():
 
@@ -67,7 +73,8 @@ def process_file():
 
     logging.basicConfig(level=level, format=LOG_FORMAT)
     notifiers = []
-    notifiers.append(GmailNotifier());
+    notifiers.append(GmailNotifier())
+    notifiers.append(SMSNotifier())
 
     try:
         processor = FileProcessor(filename=filename, notifiers=notifiers)
