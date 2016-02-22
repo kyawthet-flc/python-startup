@@ -14,5 +14,4 @@ class XMLFileDecoder(BaseFileDecoder):
             converter = xml2json(self.filename)
             data = json.loads(converter.get_json())
             self.logger.info('reading XML data: done')
-        print data
         return data["root"]["employees"]["element"]
