@@ -4,8 +4,8 @@
         "url": "http://www.howareyou.com"
     },
     "employees": [
-        	{
-        	    "name": "Manu",
+            {
+                "name": "Manu",
                 "age": "22",
                 "position": "sysadmin",
                 "email": "manu@howareyou.com"
