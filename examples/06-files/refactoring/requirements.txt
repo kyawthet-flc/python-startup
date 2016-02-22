@@ -1,2 +1,4 @@
-pytest==2.8.7
-xmlutils==1.1
+pytest
+xmlutils
+pep8
+nose
