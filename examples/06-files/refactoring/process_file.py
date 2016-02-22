@@ -22,9 +22,9 @@ class FileProcessor(object):
     def __init__(self, filename, notifiers=None):
         self.logger = logging.getLogger("fileprocess")
         self.notifiers = notifiers if notifiers is not None else []
-        self.decoder = self.get_decoder_from_file(filename)
+        self.decoder = self._get_decoder_from_file(filename)
 
-    def get_decoder_from_file(self, filename):
+    def _get_decoder_from_file(self, filename):
 
         file_ext = os.path.splitext(filename)[1]
         for ext, decoder_class in SUPPORTED_FILE_DECODERS.items():
