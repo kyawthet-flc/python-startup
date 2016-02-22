@@ -11,7 +11,7 @@ from notifiers.gmail_notifier import GmailNotifier
 LOG_FORMAT = '%(asctime)s:%(name)s:%(levelname)s: %(message)s'
 
 SUPPORTED_FILE_DECODERS = {  # extension: decoder
-                            "json": JSONFileDecoder
+                            ".json": JSONFileDecoder
                         }
 
 class FileProcessor(object):
