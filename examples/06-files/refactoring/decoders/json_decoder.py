@@ -1,6 +1,7 @@
 from base_decoder import BaseFileDecoder
 import json
 
+
 class JSONFileDecoder(BaseFileDecoder):
 
     def __init__(self, filename, logger=None):

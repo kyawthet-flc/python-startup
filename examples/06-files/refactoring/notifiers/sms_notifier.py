@@ -1,5 +1,6 @@
 import logging
 
+
 class SMSNotifier(object):
 
     def __init__(self):
@@ -14,6 +15,3 @@ class SMSNotifier(object):
         self.logger.debug('sending SMS to %s...', to)
         # Actually send the SMS here!
         self.logger.debug('sent SMS to %s.', to)
-
-
-

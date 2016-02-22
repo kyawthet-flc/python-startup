@@ -1,7 +1,8 @@
-from xmlutils.xml2json import xml2json
 import json
-from base_decoder import BaseFileDecoder
 import pprint
+from base_decoder import BaseFileDecoder
+from xmlutils.xml2json import xml2json
+
 
 class XMLFileDecoder(BaseFileDecoder):
 

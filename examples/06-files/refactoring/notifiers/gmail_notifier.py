@@ -4,6 +4,7 @@ import smtplib
 SMTP_LOGIN = "pierreroth64.python.startup@gmail.com"
 SMTP_PWD = 'coucou6465'
 
+
 class GmailNotifier(object):
 
     def __init__(self, login=SMTP_LOGIN, password=SMTP_PWD):
@@ -28,6 +29,3 @@ class GmailNotifier(object):
         self.logger.debug('sending email to %s...', to)
         self.conn.sendmail(self.login, to, content)
         self.logger.debug('sent email to %s.', to)
-
-
-
