@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <company>
+        <name>HowAreYou</name>
+        <url>http://www.python-startup.com</url>
+    </company>
+    <employees>
+        <element>
+            <age>22</age>
+            <contact>
+                <email>pierreroth64@gmail.com</email>
+                <phone>+33-608855234</phone>
+            </contact>
+            <holidays>
+                <remaining>3</remaining>
+            </holidays>
+            <name>Manu</name>
+            <position>sysadmin</position>
+        </element>
+        <element>
+            <age>25</age>
+            <contact>
+                <email>pierreroth64@gmail.com</email>
+                <phone>+33-603532522</phone>
+            </contact>
+            <holidays>
+                <remaining>2</remaining>
+            </holidays>
+            <name>Cedric</name>
+            <position>developer</position>
+        </element>
+        <element>
+            <age>42</age>
+            <contact>
+                <email>pierreroth64@gmail.com</email>
+                <phone>+33-6969696969</phone>
+            </contact>
+            <holidays>
+                <remaining>15</remaining>
+            </holidays>
+            <name>Diego</name>
+            <position>developer</position>
+        </element>
+    </employees>
+</root>

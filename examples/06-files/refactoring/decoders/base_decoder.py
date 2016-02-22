@@ -10,5 +10,5 @@ class BaseFileDecoder(object):
         self.filename = filename
         self.logger = logger if logger is not None else logging.getLogger("filedecoder")
 
-    def get_data(self):
-        raise Exception('get_data must be implented in your class!')
+    def get_employees(self):
+        raise Exception('get_employees must be implented in your class!')
