@@ -18,6 +18,12 @@ doc:
 	@echo "sensible-browser docs/build/html/index.html &"
 	@echo
 
+doc-pdf:
+	@echo "Building documentation (pdf)..."
+	@cd docs && PYTHONPATH=$(CURRENT_DIR) make SPHINXOPTS=-j4 latextpdf && cd ..
+	@echo "Done."
+	@echo "Open docs/_build/latexpdf/ with your favourite PDF reader"
+
 pep8:
 	@echo "Cheking PEP8 coding style..."
 	@pep8 . --exclude="docs,test*" --max-line-length=90 --ignore=E127,E265
