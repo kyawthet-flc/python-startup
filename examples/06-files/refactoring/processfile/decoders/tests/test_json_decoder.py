@@ -3,7 +3,7 @@
 
 import pytest
 import os.path
-from decoders.json_decoder import JSONFileDecoder
+from processfile.decoders.json_decoder import JSONFileDecoder
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 

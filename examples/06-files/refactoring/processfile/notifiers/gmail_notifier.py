@@ -4,7 +4,8 @@
 import logging
 import smtplib
 
-'''This module contains the GmailNotifier class which enables to notify via a Gmail account'''
+'''This module contains the GmailNotifier class
+   which enables to notify via a Gmail account'''
 
 SMTP_LOGIN = "pierreroth64.python.startup@gmail.com"
 SMTP_PWD = 'coucou6465'

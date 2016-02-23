@@ -6,7 +6,9 @@ import pprint
 from base_decoder import BaseFileDecoder
 from xmlutils.xml2json import xml2json
 
-'''This module contains the XMLFileDecoder class which decodes XML data'''
+'''This module contains the XMLFileDecoder class
+   which decodes XML data'''
+
 
 class XMLFileDecoder(BaseFileDecoder):
 

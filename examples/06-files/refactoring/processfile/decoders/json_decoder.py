@@ -4,7 +4,8 @@
 from base_decoder import BaseFileDecoder
 import json
 
-'''This module contains the JSONFileDecoder class which decodes JSON data'''
+'''This module contains the JSONFileDecoder class
+   which decodes JSON data'''
 
 
 class JSONFileDecoder(BaseFileDecoder):

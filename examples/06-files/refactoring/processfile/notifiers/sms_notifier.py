@@ -4,7 +4,8 @@
 import logging
 
 
-'''This module contains the SMSNotifier class which enables to notify via Short Message Service'''
+'''This module contains the SMSNotifier class
+   which enables to notify via Short Message Service'''
 
 
 class SMSNotifier(object):
