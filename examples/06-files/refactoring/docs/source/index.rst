@@ -9,6 +9,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   intro
+   arch
+
 
 
 Indices and tables
