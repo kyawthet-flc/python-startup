@@ -1,19 +1,10 @@
-# Copyright (C) 2015 Legrand France
-# All rights reserved
-
-# Simple makefile for pyzigbee development
-
-TEST_ARGS = -v
-ifeq ($(WITH_COVERAGE), yes)
-	TEST_ARGS += --with-coverage --cover-package=pyzigbee --cover-erase
-endif
-
+# Simple makefile for processfile development
 
 all: pep8 test
 
 test:
 	@echo "Running tests..."
-	PYTHONPATH=. nosetests $(TEST_ARGS)
+	PYTHONPATH=. nosetests -v
 	@echo "Done."
 
 doc:
