@@ -1,7 +1,11 @@
 
 # Installation
-pip install -r requirements.txt
+
+python setup.py install
+
 
 # Developer commands
 
-PYTHONPATH=. py.test
+pip install -r requirements.txt
+
+make test
