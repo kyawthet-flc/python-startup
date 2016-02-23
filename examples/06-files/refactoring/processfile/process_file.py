@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import traceback
 import pprint
 import sys
@@ -59,6 +61,9 @@ def process_file():
     parser = OptionParser("usage: %prog [options] filename")
     parser.add_option("-d", "--debug", dest="debug_level",
                       help="set log level to LEVEL", metavar="LEVEL")
+    parser.add_option("-n", "--no-notification", dest="no_notif", action="store_true",
+                      default=False,
+                      help="disable notifications")
     (options, args) = parser.parse_args()
 
     if len(args) < 1:
@@ -73,8 +78,9 @@ def process_file():
 
     logging.basicConfig(level=level, format=LOG_FORMAT)
     notifiers = []
-    notifiers.append(GmailNotifier())
-    notifiers.append(SMSNotifier())
+    if not options.no_notif:
+        notifiers.append(GmailNotifier())
+        notifiers.append(SMSNotifier())
 
     try:
         processor = FileProcessor(filename=filename, notifiers=notifiers)
