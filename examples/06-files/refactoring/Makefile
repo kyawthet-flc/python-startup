@@ -1,15 +1,17 @@
 # Simple makefile for processfile development
 
+CURRENT_DIR = $(shell pwd)
+
 all: pep8 test
 
 test:
 	@echo "Running tests..."
-	PYTHONPATH=. py.test
+	PYTHONPATH=$(CURRENT_DIR) py.test
 	@echo "Done."
 
 doc:
 	@echo "Building documentation..."
-	@cd docs && PYTHONPATH=.. make SPHINXOPTS=-j4 html && cd ..
+	@cd docs && PYTHONPATH=$(CURRENT_DIR) make SPHINXOPTS=-j4 html && cd ..
 	@echo "Done."
 	@echo "Open docs/_build/html/index.html with your favourite browser "docs/build/html/index.html
 	@echo
