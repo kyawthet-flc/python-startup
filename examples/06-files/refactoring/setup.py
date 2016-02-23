@@ -6,6 +6,7 @@ Setup script to install the process file command line tool
 """
 
 from setuptools import setup, find_packages
+from processfile import __version__
 
 setup(
     name='processFile',
