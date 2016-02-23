@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 # Non pythonic way (C-like)
 numbers = [2, 3, 7, 8, 90, 8, 8, 8]

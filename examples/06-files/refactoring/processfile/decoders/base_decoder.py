@@ -1,5 +1,10 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import logging
 import os.path
+
+'''This module contains the BaseFileDecoder class, the parent class of all the file decoders'''
 
 
 class BaseFileDecoder(object):

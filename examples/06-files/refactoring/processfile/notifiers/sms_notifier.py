@@ -1,4 +1,10 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import logging
+
+
+'''This module contains the SMSNotifier class which enables to notify via Short Message Service'''
 
 
 class SMSNotifier(object):
@@ -13,5 +19,5 @@ class SMSNotifier(object):
 
         to = self._get_phone_from_contact(contact)
         self.logger.debug('sending SMS to %s...', to)
-        # Actually send the SMS here!
+        #FIXME: Actually send the SMS here!
         self.logger.debug('sent SMS to %s.', to)

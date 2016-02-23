@@ -1,8 +1,11 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import time
 from progressbar import ProgressBar
 
 TIME_WINDOW_SECONDS = 3
+
 
 def calculate(loops):
     sleep_value = float(TIME_WINDOW_SECONDS) / loops

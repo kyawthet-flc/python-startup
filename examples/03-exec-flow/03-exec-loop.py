@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 for i in range(10):
     print 'loop (count: %d)' % i
@@ -30,4 +31,4 @@ index = 0
 while index < 5:
     print index
     index += 1
-	
+

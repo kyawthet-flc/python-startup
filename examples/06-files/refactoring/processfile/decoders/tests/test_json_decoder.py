@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import pytest
 import os.path
 from decoders.json_decoder import JSONFileDecoder

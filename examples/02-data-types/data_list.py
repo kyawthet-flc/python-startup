@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 print "---------------------"
 print "List basic operations"
@@ -23,7 +24,7 @@ print poped
 print user_list
 
 print "-------------------"
-print "List comprehensions" 
+print "List comprehensions"
 print
 
 numbers = [2, 5, 7, 34, 1]

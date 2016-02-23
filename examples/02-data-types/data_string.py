@@ -1,12 +1,13 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 first = "Pierre" # double quote
 
 last = 'Roth' # single quote
 
 cv = """
-     Mon CV 
-     sur 
+     Mon CV
+     sur
      plusieurs lignes
      """
 

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 company_info = {
 	'name': 'My super company',
@@ -22,7 +23,7 @@ print
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 print "pretty display"
-pp.pprint(company_info)                     
+pp.pprint(company_info)
 
 
 # access field

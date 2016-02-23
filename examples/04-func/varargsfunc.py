@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 
 def my_varargs_routine(*args, **kwargs):

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# -*- coding: utf-8 -*-
 
 def my_funny_routine(name, greet='Hello'):
     '''This routine prints a greeting to the console'''

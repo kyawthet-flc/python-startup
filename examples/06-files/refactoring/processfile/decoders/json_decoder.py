@@ -1,5 +1,10 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 from base_decoder import BaseFileDecoder
 import json
+
+'''This module contains the JSONFileDecoder class which decodes JSON data'''
 
 
 class JSONFileDecoder(BaseFileDecoder):
