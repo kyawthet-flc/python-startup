@@ -4,7 +4,7 @@ all: pep8 test
 
 test:
 	@echo "Running tests..."
-	PYTHONPATH=. nosetests -v
+	PYTHONPATH=. py.test
 	@echo "Done."
 
 doc:
