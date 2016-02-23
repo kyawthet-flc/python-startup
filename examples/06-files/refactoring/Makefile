@@ -20,9 +20,9 @@ doc:
 	@echo "Building documentation..."
 	@cd docs && PYTHONPATH=.. make SPHINXOPTS=-j4 html && cd ..
 	@echo "Done."
-	@echo "Open docs/_build/html/index.html with your favourite browser"docs/_build/html/index.html
+	@echo "Open docs/_build/html/index.html with your favourite browser "docs/build/html/index.html
 	@echo
-	@echo "sensible-browser docs/_build/html/index.html &"
+	@echo "sensible-browser docs/build/html/index.html &"
 	@echo
 
 pep8:
