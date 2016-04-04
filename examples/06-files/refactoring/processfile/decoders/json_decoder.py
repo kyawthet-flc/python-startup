@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from base_decoder import BaseFileDecoder
+from processfile.decoders.base_decoder import BaseFileDecoder
 import json
 
 '''This module contains the JSONFileDecoder class

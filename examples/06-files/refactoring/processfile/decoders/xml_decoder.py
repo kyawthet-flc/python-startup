@@ -3,7 +3,7 @@
 
 import json
 import pprint
-from base_decoder import BaseFileDecoder
+from processfile.decoders.base_decoder import BaseFileDecoder
 from xmlutils.xml2json import xml2json
 
 '''This module contains the XMLFileDecoder class
